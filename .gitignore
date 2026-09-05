@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Scratch / logs
+*.log
+scratch_*/
+
+# Lean build artifacts
+.lake/
+build/
+.docbuild/
+*.olean
