@@ -49,7 +49,7 @@ ax.annotate(
     arrowprops=dict(arrowstyle="->", color="#c0392b", lw=1.0))
 
 ax.set_xlabel("Budget share allocated to library (density)")
-ax.set_ylabel("Success rate")
+ax.set_ylabel("Close rate")
 ax.set_title("Equal-compute library/direct crossover (H5)", fontsize=11, fontweight="bold")
 ax.set_xlim(0.0, 1.05)
 ax.set_ylim(0.0, 0.8)
@@ -59,7 +59,8 @@ ax.legend(frameon=False, loc="upper left", fontsize=9)
 ax.grid(True, linestyle=":", alpha=0.35)
 
 ax.text(0.99, 0.02, f"n={d['n_targets']} targets; 20-step grid; D constant at 0.30",
-        transform=ax.transAxes, ha="right", va="bottom", fontsize=8, color="#555555")
+        transform=ax.transAxes, ha="right", va="bottom", fontsize=8, color="#555555",
+        bbox=dict(facecolor="white", alpha=0.7, edgecolor="none", pad=1.5))
 
 out = os.path.join(HERE, "fig3_equal_compute_crossover.pdf")
 fig.savefig(out, format="pdf", bbox_inches="tight")
