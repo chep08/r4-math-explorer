@@ -1,0 +1,42 @@
+{
+  "lib": 25,
+  "targets": 30,
+  "points": [
+    {
+      "rho": 0.0,
+      "lib_size": 0,
+      "closed": 8,
+      "P": 0.2667
+    },
+    {
+      "rho": 0.2,
+      "lib_size": 5,
+      "closed": 8,
+      "P": 0.2667
+    },
+    {
+      "rho": 0.4,
+      "lib_size": 10,
+      "closed": 8,
+      "P": 0.2667
+    },
+    {
+      "rho": 0.6,
+      "lib_size": 15,
+      "closed": 8,
+      "P": 0.2667
+    },
+    {
+      "rho": 0.8,
+      "lib_size": 20,
+      "closed": 8,
+      "P": 0.2667
+    },
+    {
+      "rho": 1.0,
+      "lib_size": 25,
+      "closed": 8,
+      "P": 0.2667
+    }
+  ]
+}
