@@ -56,7 +56,8 @@ ax.grid(True, linestyle=":", alpha=0.35)
 ax.text(0.99, 0.02,
         f"{d['n_classes']} classes x {d['targets_per_class']} targets; "
         f"{len(gen)}-step rho_eff grid",
-        transform=ax.transAxes, ha="right", va="bottom", fontsize=8, color="#555555")
+        transform=ax.transAxes, ha="right", va="bottom", fontsize=8, color="#555555",
+        bbox=dict(facecolor="white", alpha=0.7, edgecolor="none", pad=1.5))
 
 out = os.path.join(HERE, "fig2_generalization_gain.pdf")
 fig.savefig(out, format="pdf", bbox_inches="tight")
