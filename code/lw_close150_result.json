@@ -1,0 +1,97 @@
+{
+  "n": 150,
+  "closed": 18,
+  "rate": 0.12,
+  "results": [
+    {
+      "name": "lean_workbook_plus_20362",
+      "theorem_statement": "theorem lean_workbook_plus_20362 (a : ℝ) (h : a = (-1/4)^(1/3)) : a = (-1/4)^(1/3):= by",
+      "tactic": "linarith"
+    },
+    {
+      "name": "lean_workbook_plus_65798",
+      "theorem_statement": "theorem lean_workbook_plus_65798 (a b c : ℝ) : Real.sqrt (a ^ 2 + a * b + b ^ 2) + Real.sqrt (b ^ 2 + b * c + c ^ 2) = Real.sqrt (3 * (a + b) ^ 2 / 4 + (a - b) ^ 2 / 4) + Real.sqrt (3 * (b + c) ^ 2 / 4 + (b - c) ^ 2 / 4):= by",
+      "tactic": "ring"
+    },
+    {
+      "name": "lean_workbook_plus_42432",
+      "theorem_statement": "theorem lean_workbook_plus_42432 :\n  (3 / 10 * (4 / 5)^3) = 96 / 625:= by",
+      "tactic": "ring"
+    },
+    {
+      "name": "lean_workbook_plus_2994",
+      "theorem_statement": "theorem lean_workbook_plus_2994 (x y : ℝ) : (x - y) ^ 2 + (x - 1) ^ 2 + (y - 1) ^ 2 ≥ 0:= by",
+      "tactic": "nlinarith"
+    },
+    {
+      "name": "lean_workbook_plus_31657",
+      "theorem_statement": "theorem lean_workbook_plus_31657  (x : ℝ) (hx : x^2 ≤ 1) : 1 - x^2 ≤ 2 * (1 - x):= by",
+      "tactic": "nlinarith"
+    },
+    {
+      "name": "lean_workbook_plus_43741",
+      "theorem_statement": "theorem lean_workbook_plus_43741 (a b c : ℝ) : ((a + 1) / (a + b))^(2/5) + ((b + 1) / (b + c))^(2/5) + ((c + 1) / (c + a))^(2/5) ≥ 3:= by",
+      "tactic": "norm_num"
+    },
+    {
+      "name": "lean_workbook_plus_11136",
+      "theorem_statement": "theorem lean_workbook_plus_11136 (a b : ℤ) : a^4 + 4 * b^4 = (a^2 + 2 * b^2 + 2 * a * b) * (a^2 + 2 * b^2 - 2 * a * b):= by",
+      "tactic": "ring"
+    },
+    {
+      "name": "lean_workbook_plus_14711",
+      "theorem_statement": "theorem lean_workbook_plus_14711 (f : ℕ → ℕ) (hf: f 1 = 1 ∧ f 2 = 2 ∧ f 3 = 3 ∧ f 4 = 4 ∧ f 5 = 5) : f 1 = 1 ∧ f 2 = 2 ∧ f 3 = 3 ∧ f 4 = 4 ∧ f 5 = 5:= by",
+      "tactic": "omega"
+    },
+    {
+      "name": "lean_workbook_plus_73304",
+      "theorem_statement": "theorem lean_workbook_plus_73304 (x : ℝ) (h : ℝ → ℝ) (hx: (x-1)/2 * h ((x-1)/2) - (1-x)/2 * h ((1-x)/2) = (x-1) * h 0) (hy: (1-x)/2 * h ((1-x)/2) - (x+1)/2 * h ((x+1)/2) = -x * h 1) (hz: (x+1)/2 * h ((x+1)/2) - (x-1)/2 * h ((x-1)/2) = h x) : h x = x * (h 1 - h 0) + h 0:= by",
+      "tactic": "linarith"
+    },
+    {
+      "name": "lean_workbook_plus_22826",
+      "theorem_statement": "theorem lean_workbook_plus_22826 (g : ℝ → ℝ) (x : ℝ) (g_def : g x = 3 * x + 1) (x_in : x ∈ Set.Icc (-3) 2) : ∃ y, y = g x:= by",
+      "tactic": "norm_num"
+    },
+    {
+      "name": "lean_workbook_plus_30234",
+      "theorem_statement": "theorem lean_workbook_plus_30234 : 35 * 79 = 2765:= by",
+      "tactic": "ring"
+    },
+    {
+      "name": "lean_workbook_plus_59728",
+      "theorem_statement": "theorem lean_workbook_plus_59728 (a t : ℝ) : (a - 10) * t + a * t = 390 ↔ (2 * a - 10) * t = 390:= by",
+      "tactic": "ring"
+    },
+    {
+      "name": "lean_workbook_plus_52064",
+      "theorem_statement": "theorem lean_workbook_plus_52064 (a : ℝ) : 157 + 2 * (a - 1 / 2) ^ 2 + 32 * a ^ 2 * (a ^ 2 - a - 1) ^ 2 + 16 * (a ^ 2 + a - 1) ^ 2 + 18 * a ^ 2 ≥ 0:= by",
+      "tactic": "nlinarith"
+    },
+    {
+      "name": "lean_workbook_plus_63956",
+      "theorem_statement": "theorem lean_workbook_plus_63956 {x y : ℝ} : (x - y) ^ 2 * (2 * x + y) ^ 2 * (x + 2 * y) ^ 2 ≥ 0:= by",
+      "tactic": "positivity"
+    },
+    {
+      "name": "lean_workbook_plus_82449",
+      "theorem_statement": "theorem lean_workbook_plus_82449 (a b θ : ℝ) : a * b * (2 * Real.cos θ - 1) * (2 * Real.cos (θ + 1)) / (2 * a * Real.cos θ + b) = a * b * (2 * Real.cos θ - 1) * (2 * Real.cos (θ + 1)) / (2 * a * Real.cos θ + b):= by",
+      "tactic": "ring"
+    },
+    {
+      "name": "lean_workbook_plus_62929",
+      "theorem_statement": "theorem lean_workbook_plus_62929 : 2 * x - 5 < 7 ↔ x < 6:= by",
+      "tactic": "omega"
+    },
+    {
+      "name": "lean_workbook_plus_71828",
+      "theorem_statement": "theorem lean_workbook_plus_71828 : t^12 + t^5 - 6 * t^4 + t^3 + 8 * t^2 - 6 * t + 2 = 0 → t ∈ Set.univ:= by",
+      "tactic": "norm_num"
+    },
+    {
+      "name": "lean_workbook_plus_7148",
+      "theorem_statement": "theorem lean_workbook_plus_7148 : ∃ w x y z : ℕ, w ∈ ({24, 27, 32} : Finset ℕ) ∧ x ∈ ({24, 27, 32} : Finset ℕ) ∧ y ∈ ({24, 27, 32} : Finset ℕ) ∧ z ∈ ({24, 27, 32} : Finset ℕ) ∧ w*x*y*z = 2^11*3^5:= by",
+      "tactic": "norm_num"
+    }
+  ]
+}
