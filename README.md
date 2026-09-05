@@ -52,6 +52,7 @@ r4-math-explorer/
 │   ├── stage1_real_gen.py    real generalization operator (H3)
 │   ├── stage1_real_baseline.py  real deep-gap baseline P(ρ)
 │   ├── gen_fig1.py           regenerate Fig. 1 (synthetic P(ρ)/χ(ρ), H1)
+│   ├── gen_fig2.py           regenerate Fig. 2 (generalization shift F_gen/F_raw, H3)
 │   ├── gen_fig3.py           regenerate Fig. 3 (equal-compute L/D crossover, H5)
 │   ├── gen_fig4.py           regenerate Fig. 4 (flat real P(ρ) vs synthetic rise)
 │   └── *.json / *.jsonl      the gold-standard result data reported in the paper
@@ -136,9 +137,10 @@ python stage1_real_baseline.py --library stage1_library.jsonl --targets stage1_t
 **Regenerate the manuscript figures (all read the real result JSONs):**
 
 ```powershell
-python gen_fig1.py   # reads report_stage1_synth.json  -> fig1_phase_transition.pdf
-python gen_fig3.py   # reads report_stage1_h245.json   -> fig3_equal_compute_crossover.pdf
-python gen_fig4.py   # reads lw_h1_rho.json + report_stage1_rho_c.json -> fig4_real_datasets_absent.pdf
+python gen_fig1.py   # reads report_stage1_synth.json   -> fig1_phase_transition.pdf
+python gen_fig2.py   # reads report_stage1_rho_c.json   -> fig2_generalization_gain.pdf
+python gen_fig3.py   # reads report_stage1_h245.json    -> fig3_equal_compute_crossover.pdf
+python gen_fig4.py   # reads lw_h1_rho.json + report_stage1_synth.json -> fig4_real_datasets_absent.pdf
 ```
 
 > **Note on `LeanVerifier.verify` vs `batch_verify_many`:** `batch_verify_many`
