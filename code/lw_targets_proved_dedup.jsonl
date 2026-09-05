@@ -1,0 +1,30 @@
+{"name": "lean_workbook_plus_2", "formal_statement": "theorem lean_workbook_plus_2 (x : ℝ) : x^2 - 2*x - 24 < 0 ↔ x ∈ Set.Ioo (-4) 6:= by"}
+{"name": "lean_workbook_plus_6", "formal_statement": "theorem lean_workbook_plus_6  (x y z : ℤ) :\n  (x^2 + 1) * (y^2 + 1) * (z^2 + 1) =\n  (x + y + z)^2 - 2 * (x * y + y * z + z * x) + (x * y + y * z + z * x)^2 - 2 * x * y * z * (x + y + z) + x^2 * y^2 * z^2 + 1:= by"}
+{"name": "lean_workbook_plus_17", "formal_statement": "theorem lean_workbook_plus_17 (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (habc : a * b * c = 1) (h : a^4 + b^4 + c^4 = 1) : a^3 / (1 - a^8) + b^3 / (1 - b^8) + c^3 / (1 - c^8) ≥ 9 * (3 : ℝ)^(1 / 4) / 8:= by"}
+{"name": "lean_workbook_plus_21", "formal_statement": "theorem lean_workbook_plus_21 (n p q : ℕ) (hp : p ≤ n) (hq : q ≤ p) : (n - q).choose (p - q) * n.choose q = n.choose p * p.choose q:= by"}
+{"name": "lean_workbook_plus_24", "formal_statement": "theorem lean_workbook_plus_24 (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) : 1 / a + 1 / b + 1 / c ≥ 2 * (1 / (b + c) + 1 / (c + a) + 1 / (a + b)):= by"}
+{"name": "lean_workbook_plus_26", "formal_statement": "theorem lean_workbook_plus_26 (a b c : ℝ) : (2 * a / (b + c)) ^ (27 / 46) + (2 * b / (a + c)) ^ (27 / 46) + (2 * c / (a + b)) ^ (27 / 46) ≥ 3:= by"}
+{"name": "lean_workbook_plus_33", "formal_statement": "theorem lean_workbook_plus_33 :\n    ∀ a b c : ℝ, a > 0 ∧ b > 0 ∧ c > 0 ∧ a + b > c ∧ a + c > b ∧ b + c > a → a * (2 * a^2 - b^2 - c^2) + b * (2 * b^2 - c^2 - a^2) + c * (2 * c^2 - a^2 - b^2) ≥ 0:= by"}
+{"name": "lean_workbook_plus_35", "formal_statement": "theorem lean_workbook_plus_35 (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) (hab : a + b + c = 3) : b^(2/3) * c^(2/3) + c^(2/3) * a^(2/3) + a^(2/3) * b^(2/3) ≤ 3:= by"}
+{"name": "lean_workbook_plus_39", "formal_statement": "theorem lean_workbook_plus_39 :\n  ∑' n : ℕ, (1 / 2) * ((1 / 4)^n) = 2 / 3:= by"}
+{"name": "lean_workbook_plus_40", "formal_statement": "theorem lean_workbook_plus_40 :\n  ∀ θ : ℝ, 0 < θ ∧ θ < Real.pi / 4 → Real.cos θ > Real.sin θ:= by"}
+{"name": "lean_workbook_plus_45", "formal_statement": "theorem lean_workbook_plus_45 :\n  (5^(2*1) ≡ 25 [MOD 100]):= by"}
+{"name": "lean_workbook_plus_46", "formal_statement": "theorem lean_workbook_plus_46 :\n  ((4 * 6 + 1) : ℚ) / (6^2 - 1) = 5/7:= by"}
+{"name": "lean_workbook_plus_48", "formal_statement": "theorem lean_workbook_plus_48 :\n  1 - (25 : ℝ) / 64 = 39 / 64:= by"}
+{"name": "lean_workbook_plus_50", "formal_statement": "theorem lean_workbook_plus_50  (p : ℝ)\n  (h₀ : p = 0.5 / 5.5) :\n  p = 1 / 11:= by"}
+{"name": "lean_workbook_plus_52", "formal_statement": "theorem lean_workbook_plus_52 : ∀ x : ℝ, Real.cos (2 * x) ^ 2 = (1 + Real.cos (4 * x)) / 2:= by"}
+{"name": "lean_workbook_plus_55", "formal_statement": "theorem lean_workbook_plus_55 (p q r : ℕ) (h1 : p * r > q ^ 2) (h2 : q * r > p ^ 2) : (p * r) * (q * r) > p ^ 2 * q ^ 2:= by"}
+{"name": "lean_workbook_plus_56", "formal_statement": "theorem lean_workbook_plus_56 : sin (π / 4) = cos (π / 4) ∧ sin (π / 4) = 1 / Real.sqrt 2 ∧ cos (π / 4) = 1 / Real.sqrt 2:= by"}
+{"name": "lean_workbook_plus_75", "formal_statement": "theorem lean_workbook_plus_75 {a b c : ℝ} (ha : a ≥ 0) (hb : b ≥ 0) (hc : c ≥ 0) : 2 * (a ^ 3 + b ^ 3 + c ^ 3) + 3 * a * b * c ≥ (a * b + b * c + c * a) * (a + b + c):= by"}
+{"name": "lean_workbook_plus_86", "formal_statement": "theorem lean_workbook_plus_86 (a b c : ℝ) (h : a > 0 ∧ b > 0 ∧ c > 0) (habc : a * b * c = 1) (h : (1 - a * b) / (1 + b) + (1 - b * c) / (1 + c) + (1 - c * a) / (1 + a) = 0) : a * b * c ≤ 1:= by"}
+{"name": "lean_workbook_plus_93", "formal_statement": "theorem lean_workbook_plus_93 (a b : ℝ) (ha : 0 < a) (hb : 0 < b) : (a^2 / b^2 + b / (a + 3 * b)) ≥ 6 - 9 / (4:ℝ)^(1/3):= by"}
+{"name": "lean_workbook_plus_99", "formal_statement": "theorem lean_workbook_plus_99 (a b c : ℝ) (hab : a ≥ 0 ∧ b ≥ 0 ∧ c ≥ 0) (h : a * b + b * c + c * a > 0) : (a / (b + c))^(1 / 4) + (b / (a + c))^(1 / 4) + (c / (a + b))^(1 / 4) ≥ 2:= by"}
+{"name": "lean_workbook_plus_106", "formal_statement": "theorem lean_workbook_plus_106 :  ∀ a b c : ℝ, (a + b + c) ^ 2 = (a + 2 * b) * (a + 2 * c) + (b - c) ^ 2:= by"}
+{"name": "lean_workbook_plus_117", "formal_statement": "theorem lean_workbook_plus_117 (a b c : ℝ) (ha : 0 < a) (hb : 0 < b) (hc : 0 < c) : (4 * a * b * (a + b))^(1 / 110) + (4 * b * c * (b + c))^(1 / 110) + (4 * c * a * (c + a))^(1 / 110) ≤ 3 * ((a + b) * (b + c) * (c + a))^(1 / 110):= by"}
+{"name": "lean_workbook_plus_125", "formal_statement": "theorem lean_workbook_plus_125 (a b c d : ℤ) (h : ∀ x, 5 ∣ a * x ^ 3 + b * x ^ 2 + c * x + d) : 5 ∣ a ∧ 5 ∣ b ∧ 5 ∣ c ∧ 5 ∣ d:= by"}
+{"name": "lean_workbook_plus_128", "formal_statement": "theorem lean_workbook_plus_128 : ∀ n:ℕ, 6 * 4 ^ n ≡ 6 [ZMOD 9]:= by"}
+{"name": "lean_workbook_plus_130", "formal_statement": "theorem lean_workbook_plus_130 (x : ℝ) (f : ℝ → ℝ) (hf: f x = if x ∈ Set.Icc 0 (1/3) then 0 else x - 1/3) : f x = if x ∈ Set.Icc 0 (1/3) then 0 else x - 1/3:= by"}
+{"name": "lean_workbook_plus_135", "formal_statement": "theorem lean_workbook_plus_135 (a b c : ℝ) : (4/3 * a ^ 2 + 8/3 * b ^ 2 + 8 * a * c + 12 * c ^ 2) ≥ 0:= by"}
+{"name": "lean_workbook_plus_137", "formal_statement": "theorem lean_workbook_plus_137 : Real.log (Real.exp π) = π:= by"}
+{"name": "lean_workbook_plus_138", "formal_statement": "theorem lean_workbook_plus_138 (x : ℝ) : x ^ 2 ≥ 0:= by"}
+{"name": "lean_workbook_plus_139", "formal_statement": "theorem lean_workbook_plus_139 :\n  ∀ m n, m % n = 0 → ∃ x, m = n * x:= by"}
