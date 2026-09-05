@@ -63,8 +63,8 @@ ax.set_xlabel("Library density $\\rho$")
 ax.set_ylabel("Hold-out close probability $P(\\rho)$")
 ax.set_title("Library-reuse phase transition is not observed on real data",
              fontsize=11, fontweight="bold")
-ax.set_xlim(0.0, 1.0)
-ax.set_ylim(0.0, 1.05)
+ax.set_xlim(0.0, 1.03)
+ax.set_ylim(0.0, 1.03)
 ax.xaxis.set_major_locator(MaxNLocator(nbins=6))
 ax.yaxis.set_major_locator(MaxNLocator(nbins=6))
 ax.legend(frameon=False, loc="upper left", fontsize=9)
@@ -73,7 +73,8 @@ ax.grid(True, linestyle=":", alpha=0.35)
 ax.text(0.99, 0.02,
         f"real: $n={n_targets}$ held-out targets, $P$ constant at {P0:.3f}",
         transform=ax.transAxes, ha="right", va="bottom", fontsize=8,
-        color="#555555")
+        color="#555555",
+        bbox=dict(facecolor="white", alpha=0.7, edgecolor="none", pad=1.5))
 
 out = os.path.join(HERE, "fig4_real_datasets_absent.pdf")
 fig.savefig(out, format="pdf", bbox_inches="tight")
