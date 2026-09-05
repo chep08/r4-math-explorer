@@ -3,7 +3,7 @@
 **Phase Transition of Library Reuse in Formal Theorem Proving: A Falsifiable Framework and Its Empirical Boundary**
 
 This repository contains the reproducible experiments behind the above manuscript
-(by Pan Che, Chongqing University of Science and Technology). It implements a
+(by Pan Che, Independent Researcher, Xinjiang, China). It implements a
 *closed, zero-token-at-inference, Lean-hard-verified* pipeline for testing whether
 library reuse in formal theorem proving exhibits a *percolation phase transition*:
 the library's fragment-coverage density `ρ` is the control parameter, the held-out
