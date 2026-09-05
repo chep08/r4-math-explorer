@@ -1,0 +1,80 @@
+{
+  "n_lemmas": 40,
+  "k": 3,
+  "n_targets": 60,
+  "density_points": [
+    {
+      "rho": 0.1,
+      "size": 4,
+      "closed": 0,
+      "P": 0.0,
+      "chi": 0.0
+    },
+    {
+      "rho": 0.2,
+      "size": 8,
+      "closed": 0,
+      "P": 0.0,
+      "chi": 0.0
+    },
+    {
+      "rho": 0.3,
+      "size": 12,
+      "closed": 0,
+      "P": 0.0,
+      "chi": 0.0
+    },
+    {
+      "rho": 0.4,
+      "size": 16,
+      "closed": 2,
+      "P": 0.0333,
+      "chi": 0.0333
+    },
+    {
+      "rho": 0.5,
+      "size": 20,
+      "closed": 4,
+      "P": 0.0667,
+      "chi": 0.0333
+    },
+    {
+      "rho": 0.6,
+      "size": 24,
+      "closed": 9,
+      "P": 0.15,
+      "chi": 0.0833
+    },
+    {
+      "rho": 0.7,
+      "size": 28,
+      "closed": 14,
+      "P": 0.2333,
+      "chi": 0.0833
+    },
+    {
+      "rho": 0.8,
+      "size": 32,
+      "closed": 27,
+      "P": 0.45,
+      "chi": 0.2167
+    },
+    {
+      "rho": 0.9,
+      "size": 36,
+      "closed": 41,
+      "P": 0.6833,
+      "chi": 0.2333
+    },
+    {
+      "rho": 1.0,
+      "size": 40,
+      "closed": 60,
+      "P": 1.0,
+      "chi": 0.3167
+    }
+  ],
+  "rho_c_heuristic": 0.9,
+  "method": "synthetic needs-bridging targets, set-inclusion closure",
+  "notes": "纯逻辑集合包含判定；Lean 实证对应关系见 stage1_synth_lean_verify"
+}
