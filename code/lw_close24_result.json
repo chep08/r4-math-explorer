@@ -1,0 +1,57 @@
+{
+  "n": 24,
+  "closed": 10,
+  "rate": 0.4166666666666667,
+  "results": [
+    {
+      "name": "lean_workbook_plus_6",
+      "closed": true,
+      "tactic": "ring"
+    },
+    {
+      "name": "lean_workbook_plus_26",
+      "closed": true,
+      "tactic": "norm_num"
+    },
+    {
+      "name": "lean_workbook_plus_35",
+      "closed": true,
+      "tactic": "norm_num"
+    },
+    {
+      "name": "lean_workbook_plus_39",
+      "closed": true,
+      "tactic": "norm_num"
+    },
+    {
+      "name": "lean_workbook_plus_46",
+      "closed": true,
+      "tactic": "ring"
+    },
+    {
+      "name": "lean_workbook_plus_48",
+      "closed": true,
+      "tactic": "ring"
+    },
+    {
+      "name": "lean_workbook_plus_55",
+      "closed": true,
+      "tactic": "nlinarith"
+    },
+    {
+      "name": "lean_workbook_plus_86",
+      "closed": true,
+      "tactic": "linarith"
+    },
+    {
+      "name": "lean_workbook_plus_99",
+      "closed": true,
+      "tactic": "norm_num"
+    },
+    {
+      "name": "lean_workbook_plus_117",
+      "closed": true,
+      "tactic": "norm_num"
+    }
+  ]
+}
