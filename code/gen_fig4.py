@@ -1,10 +1,13 @@
 """Regenerate fig4_real_datasets_absent.pdf: real-domain P(rho) is flat.
 
 Reads two gold-standard JSONs:
-  - code/lw_h1_rho.json          (real corpora P(rho): flat at 0.267)
-  - code/report_stage1_rho_c.json (synthetic domain P(rho): rises to ~1.0)
-and plots both so the contrast (valid-but-bounded) is visible. Aligns figure,
-caption and body text. Data are read from disk, never hard-coded.
+  - code/lw_h1_rho.json            (real corpora P(rho): flat at 0.267)
+  - code/report_stage1_synth.json  (synthetic-domain P(rho): the SAME curve used by
+                                    Fig. 1, so the contrast line is not mis-stated)
+and plots both so the contrast (valid-but-bounded) is visible. Data are read from
+disk, never hard-coded. The synthetic curve MUST be the same P(rho) as Fig. 1
+(report_stage1_synth.json), as the main text states this figure contrasts the flat
+real curve "with the rising synthetic curve of Figure 1".
 """
 import json
 import os
@@ -18,7 +21,7 @@ CODE = os.path.join(HERE, "..", "code")
 
 with open(os.path.join(CODE, "lw_h1_rho.json"), encoding="utf-8") as f:
     real = json.load(f)
-with open(os.path.join(CODE, "report_stage1_rho_c.json"), encoding="utf-8") as f:
+with open(os.path.join(CODE, "report_stage1_synth.json"), encoding="utf-8") as f:
     syn = json.load(f)
 
 # real corpora: flat P(rho)
@@ -27,10 +30,11 @@ P_r = [p["P"] for p in real["points"]]
 n_targets = real["targets"]
 P0 = P_r[0]
 
-# synthetic domain: rising P(rho) (generalized F_gen curve, the real measurement)
-syn_pts = syn["gen_points"]
+# synthetic domain: rising P(rho) — the SAME curve as Figure 1 (H1 synthetic)
+syn_pts = syn["density_points"]
 rho_s = [p["rho"] for p in syn_pts]
 P_s = [p["P"] for p in syn_pts]
+rho_c = syn["rho_c_heuristic"]  # 0.9
 
 plt.rcParams.update({
     "font.size": 11,
@@ -46,7 +50,8 @@ fig, ax = plt.subplots(figsize=(6.0, 3.6))
 ax.plot(rho_r, P_r, "o-", color="#c0392b", linewidth=2.2, markersize=7,
         label="Real corpora: $P(\\rho)$ (flat)")
 ax.plot(rho_s, P_s, "--", color="#2c3e50", linewidth=1.8,
-        label="Synthetic domain: $P(\\rho)$ (rises, $\\rho_c\\!\\approx\\!0.9$)")
+        label=f"Synthetic domain: $P(\\rho)$ (as in Fig. 1, "
+              f"$\\rho_c\\!\\approx\\!{rho_c}$)")
 
 ax.axhline(y=P0, color="#c0392b", linestyle=":", linewidth=1.0)
 ax.annotate(f"flat at $P={P0:.3f}$: library density\nhas no effect on real targets",
@@ -58,7 +63,7 @@ ax.set_xlabel("Library density $\\rho$")
 ax.set_ylabel("Hold-out close probability $P(\\rho)$")
 ax.set_title("Library-reuse phase transition is not observed on real data",
              fontsize=11, fontweight="bold")
-ax.set_xlim(-0.03, 1.05)
+ax.set_xlim(0.0, 1.0)
 ax.set_ylim(0.0, 1.05)
 ax.xaxis.set_major_locator(MaxNLocator(nbins=6))
 ax.yaxis.set_major_locator(MaxNLocator(nbins=6))
